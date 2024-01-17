@@ -1,0 +1,45 @@
+body {
+    background-color: #ADADAD;
+}
+
+
+.painting-1 {
+    display: grid;
+    width: 600px;
+    height: 600px;
+    /* for testing */
+
+    border: 1px solid black;
+
+    grid-template-columns: repeat(15, 1fr);
+    grid-template-rows: repeat(15, 1fr);
+
+}
+
+.cream {
+    background-color: #FDFBEC;
+}
+
+.red {
+    background-color: #EC4B39;
+}
+
+.blue {
+    background-color: #369AC5;
+}
+
+.black {
+    background-color: #453B39;
+}
+
+.yellow {
+    background-color: #FADC02;
+}
+
+.border-right {
+    border-right: 20px solid #453B39;
+}
+
+.border-bottom {
+    border-bottom: 20px solid #453B39;
+}
