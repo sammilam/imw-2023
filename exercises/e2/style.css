@@ -1,7 +1,6 @@
 body {
     background-color: #ffffff;
 }
-
 .center {
     margin: auto;
     width: 50%;
@@ -11,6 +10,7 @@ body {
     text-align: right;
     float: right;
 }
+
 
 .painting-1 {
     display: grid;
