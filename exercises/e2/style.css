@@ -2,7 +2,17 @@ body {
     background-color: #ffffff;
 }
 
+.center {
+    margin: auto;
+    width: 50%;
+  }
 
+  .right {
+    text-align: right;
+    float: right;
+}
+
+  
 .painting-1 {
     display: grid;
     width: 600px;
