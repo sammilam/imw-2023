@@ -1,5 +1,5 @@
 body {
-    background-color: #b19b9b;
+    background-color: #ffffff;
 }
 
 .painting-3 {
@@ -8,7 +8,7 @@ body {
     height: 600px;
     /* for testing */
 
-    border: 1px solid black;
+    border: 3px solid black;
 
     grid-template-columns: repeat(40, 1fr);
     grid-template-rows: repeat(40, 1fr);
@@ -18,6 +18,12 @@ body {
 #topSpace {
     grid-area: 1/ 1/ 5/ 41;
     background-color: white;
+}
+
+#bottomSpace {
+    grid-area: 36/ 1/ -1/ 41;
+    background-color: white;
+
 }
 
 .warmPeach {
