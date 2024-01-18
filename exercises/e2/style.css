@@ -2,7 +2,15 @@ body {
     background-color: #ffffff;
 }
 
+.center {
+    margin: auto;
+    width: 50%;
+}
 
+.right {
+    text-align: right;
+    float: right;
+}
 
 .painting-1 {
     display: grid;
@@ -45,12 +53,3 @@ body {
     border-bottom: 20px solid #453B39;
 }
 
-.center {
-    margin: auto;
-    width: 50%;
-}
-
-.right {
-    text-align: right;
-    float: right;
-}

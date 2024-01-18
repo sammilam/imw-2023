@@ -2,6 +2,16 @@ body {
     background-color: #ffffff;
 }
 
+.center {
+    margin: auto;
+    width: 50%;
+}
+
+.right {
+    text-align: right;
+    float: right;
+}
+
 .painting-2 {
     display: grid;
     width: 600px;
@@ -53,15 +63,5 @@ body {
 
 .peach {
     background-color: #F6DCD7;
-}
-
-.center {
-    margin: auto;
-    width: 50%;
-  }
-
-  .right {
-    text-align: right;
-    float: right;
 }
 
