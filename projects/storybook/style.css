@@ -1,0 +1,300 @@
+a {
+    text-decoration: none;
+    display: inline-block;
+    padding: 8px 16px;
+}
+
+body {
+    background-color: #F0DDC2;
+}
+
+h1 {
+    font-family: "altivo", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    text-align: left;
+    font-size: 65px;
+    position: absolute;
+}
+
+h2 {
+    font-family: "altivo", sans-serif;
+    font-weight: 500;
+    font-style: italic;
+}
+
+h3 {
+    font-family: "miller-text", serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+body {
+    font-family: "altivo", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    text-align: left;
+    font-size: 25px;
+}
+
+
+#start {
+    font-size: 65px;
+    color: white;
+    text-align: center;
+    margin: auto;
+    margin-top: 50%;
+}
+
+.name {
+    font-size: 50px;
+    text-align: left;
+    position: absolute;
+    top: 13%;
+    left: 49%;
+}
+
+
+/* DRAWING */
+
+.phone {
+    height: 800px;
+    width: 400px;
+    background-color: #D6C2FF;
+    border: 5px solid #6b4ea7;
+    border-radius: 5%;
+    position: relative;
+    margin: auto;
+    margin-top: -5%;
+    padding: 10px;
+}
+
+.screen {
+    height: 780px;
+    width: 380px;
+    background-color: #3B3F42;
+    border-radius: 5%;
+    position: absolute;
+    right: 40%;
+    bottom: 9%;
+}
+
+
+.screenBright {
+    height: 780px;
+    width: 380px;
+    background-color: #FFFFFF;
+    border-radius: 5%;
+    position: absolute;
+    right: 40%;
+    bottom: 9%;
+}
+
+.cousin {
+    height: 120px;
+    width: 120px;
+    background-color: #38CFFF;
+    border-radius: 50%;
+    position: absolute;
+    top: 12%;
+    left: 42%;
+}
+
+.eyes {
+    height: 15px;
+    width: 15px;
+    background-color: #000000;
+    border-radius: 50%;
+}
+
+.smile {
+    width: 50px;
+    height: 100px;
+    border: solid 2px black;
+    border-color: transparent transparent black;
+    border-radius: 50px 50px 50px 50px;
+    margin: auto;
+    margin-top: -10%;
+}
+
+.speechCousin {
+    height: 15%;
+    width: 15%;
+    border-radius: 25px 25px 25px 25px;
+    background: #B7E1EE;
+    position: absolute;
+    top: 30%;
+    left: 42%;
+}
+
+.triangle-left {
+    width: 0;
+    height: 0;
+    border-top: 25px solid transparent;
+    border-right: 50px solid #B7E1EE;
+    border-bottom: 25px solid transparent;
+    position: absolute;
+    bottom: 10px;
+}
+
+/* this tutorial helped me -> https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_shapes_triangle-right */
+
+.speechMe {
+    height: 15%;
+    width: 10%;
+    border-radius: 25px 25px 25px 25px;
+    background: #FAD553;
+    position: absolute;
+    top: 50%;
+    right: 42%;
+}
+
+.triangle-right {
+    width: 0;
+    height: 0;
+    border-top: 25px solid transparent;
+    border-left: 50px solid #FAD553;
+    border-bottom: 25px solid transparent;
+    position: absolute;
+    bottom: 10px;
+}
+
+.button {
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 40px;
+    margin: 5% 5%;
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+.button1 {
+    background-color: white;
+    color: black;
+    border: 2px solid #27F87B;
+    border-radius: 50%;
+}
+
+.button1:hover {
+    background-color: #04AA6D;
+    color: white;
+}
+
+.button2 {
+    background-color: white;
+    color: black;
+    border: 2px solid #E08686;
+    border-radius: 50%;
+}
+
+.button2:hover {
+    background-color: #E08686;
+    color: white;
+}
+
+/* sourced from https://www.w3schools.com/tags/tag_button.asp */
+
+.nextPage {
+    position: absolute;
+    top: 75%;
+    left: 65%;
+}
+
+.next {
+    background-color: #150420;
+    color: white;
+}
+
+.item1 {grid-area: header;} 
+.item2 {grid-area: days;}
+.item3 {grid-area: busy;}
+.item4 {grid-area: free;}
+
+.calendar {
+    display: grid;
+    grid-template-areas:
+    'header header header header header header header'
+    'days days days days days days days'
+    'busy busy busy busy busy busy free';
+    /* width: 100%;
+    height: 700px; */
+    background-color: #FFFFFF;
+    /* position: relative; */
+    gap: 10px;
+    padding: 10px;
+
+}
+
+.december {
+    width: 100%;
+    height: 200px;
+    background-color: #685B5B;
+    position: absolute;
+}
+
+
+
+
+/* ANIMATION */
+
+.send {
+    animation: fadeInAnimation ease 3s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+
+}
+
+.send2 {
+    opacity: 0;
+    animation-delay: 2s;
+}
+
+.next1 {
+    opacity: 0;
+    animation-delay: 5s;
+}
+
+/* animation delay from https://www.w3schools.com/cssref/tryit.php?filename=trycss3_animation-delay */
+
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+/* fade in from https://www.geeksforgeeks.org/how-to-create-fade-in-effect-on-page-load-using-css/ */
+
+
+.floating {
+    animation-name: floating;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    margin-left: 30px;
+}
+
+@keyframes floating {
+    0% {
+        transform: translate(0, 0px);
+    }
+
+    50% {
+        transform: translate(0, 25px);
+    }
+
+    100% {
+        transform: translate(0, -0px);
+    }
+}
+
+/* floating sourced from https://www.geeksforgeeks.org/css-floating-animation/ */
+
+/* resourced from w3 schools tutorials */
