@@ -1,0 +1,33 @@
+h1 {
+    font-family: "operetta-12", serif;
+    font-weight: 800;
+    font-size: 100px;
+    font-style: normal;
+}
+
+h2 {
+    font-family: 'Skranji', system-ui;
+    font-size: 100px;
+
+}
+
+h3{
+    font-family: 'Satoshi', sans-serif;
+    font-size: 100px;
+}
+
+p{
+    font-family: "operetta-12", serif;
+    font-weight: 500;
+    font-size: 20px;
+    font-style: normal;
+}
+
+.a{
+    font-family: 'Skranji', system-ui;
+
+}
+
+.b{
+    font-family: 'Satoshi', sans-serif;
+}
