@@ -50,6 +50,8 @@ body {
     margin-top: 50%;
 }
 
+
+
 .name {
     font-size: 50px;
     text-align: left;
@@ -109,6 +111,26 @@ body {
     width: 15px;
     background-color: #000000;
     border-radius: 50%;
+}
+
+.catEyes {
+    height: 50px;
+    width: 50px;
+    background-color: #685B5B;
+    border-radius: 50%;
+    position: absolute;
+}
+
+.nose {
+    width: 0;
+    height: 0;
+    border-left: 25px solid transparent;
+    border-right: 25px solid transparent;
+    border-top: 50px solid #E08686;
+    position: absolute;
+    top: 60%;
+    left: 49%;
+
 }
 
 .smile {
@@ -284,8 +306,6 @@ body {
     grid-column-end: 8;
     background-color: #665944;
     color: white;
-
-
 }
 
 /* beginning of busy days */
@@ -336,9 +356,45 @@ body {
     width: 500px;
     background-color: #FFFFFF;
     border-radius: 50px 50px 50px 50px;
-    position:absolute;
+    position: absolute;
     left: 40%;
     bottom: 4%;
+}
+
+.suggestion2 {
+    height: 100px;
+    width: 400px;
+}
+
+.cat {
+    height: 500px;
+    width: 500px;
+    background-color: white;
+    border-radius: 50%;
+    margin: auto;
+    margin-top: 7%;
+}
+
+.ear {
+    width: 0;
+    height: 0;
+    border-left: 100px solid transparent;
+    border-right: 150px solid transparent;
+    border-bottom: 200px solid white;
+    position: absolute;
+    left: 38%;
+    top: 20%;
+}
+
+.ear2 {
+    width: 0;
+    height: 0;
+    border-left: 150px solid transparent;
+    border-right: 100px solid transparent;
+    border-bottom: 200px solid white;
+    position: absolute;
+    right: 38%;
+    top: 20%;
 }
 
 /* ANIMATION */
