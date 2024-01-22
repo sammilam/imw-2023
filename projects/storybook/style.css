@@ -121,6 +121,32 @@ body {
     position: absolute;
 }
 
+.sad {
+    height: 20px;
+    width: 50px;
+}
+
+.tear {
+    width: 0;
+    height: 0;
+    border-left: 25px solid transparent;
+    border-right: 25px solid transparent;
+    border-bottom: 25px solid #49B9F8;
+    position: absolute;
+    right: 42%;
+    top: 60%;
+}
+
+.tear2 {
+    height: 10px;
+    width: 10px;
+    background-color: #49B9F8;
+    border-radius: 50%;
+    position: absolute;
+    top: 16px;
+    left: -30px;
+}
+
 .nose {
     width: 0;
     height: 0;
@@ -235,6 +261,7 @@ body {
     color: white;
 }
 
+/* calendar */
 .grid-container {
     display: grid;
     grid-template-areas: auto auto auto auto auto auto auto;
@@ -396,6 +423,72 @@ body {
     right: 38%;
     top: 20%;
 }
+
+/* Christmas Tree */
+.middle {
+    width: 20%;
+    margin: auto;
+    margin-top: 5%;
+    padding: 10px;
+    position: relative;
+}
+
+.tree {
+    margin: auto;
+    width: 0;
+    height: 0;
+    border-left: 200px solid transparent;
+    border-right: 200px solid transparent;
+    border-bottom: 250px solid #137961;
+    position: relative;
+}
+
+.tree2 {
+    border-left: 250px solid transparent;
+    border-right: 250px solid transparent;
+    border-bottom: 350px solid #137961;
+    position: absolute;
+    top: 100px;
+    left: -250px;
+}
+
+.tree3 {
+    border-left: 300px solid transparent;
+    border-right: 300px solid transparent;
+    border-bottom: 400px solid #137961;
+    position: absolute;
+    top: 250px;
+    left: -300px;
+}
+
+.decoration {
+    height: 50px;
+    width: 50px;
+    background-color: #F84949;
+    border-radius: 50%;
+    position: absolute;
+}
+
+.yellow {
+    background-color: #F8C749;
+}
+
+.silver {
+    background-color: #FFF4F4;
+}
+
+.star {
+    position: absolute;
+    background-color: #F8C749;
+    clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+    height: 100px;
+    width: 100px;
+    top: -50px;
+    right: -49px;
+}
+
+/* sourced from https://www.studytonight.com/css-howtos/how-to-create-a-simple-star-rating-look-with-css#:~:text=We%20can%20add%20a%20star,%3E%20or%20tag.  */
+
 
 /* ANIMATION */
 
