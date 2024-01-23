@@ -6,6 +6,10 @@
 body {
     margin: 100px; /* Add spacing around the entire page */ 
     font-size: 12px; /* Setting baseline font size */ 
+    font-family: "altivo", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    text-align: left;
     background-color: #F0DDC2;
 }
 

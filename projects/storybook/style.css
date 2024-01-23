@@ -5,7 +5,6 @@ a {
 }
 
 
-
 body {
     background-color: #F0DDC2;
 }
@@ -23,6 +22,8 @@ h2 {
     font-family: "altivo", sans-serif;
     font-weight: 500;
     font-style: italic;
+    font-size: 35px;
+
 }
 
 h3 {
@@ -33,14 +34,13 @@ h3 {
     font-size: 50px;
 }
 
-body {
+p {
     font-family: "altivo", sans-serif;
     font-weight: 400;
     font-style: normal;
     text-align: left;
     font-size: 25px;
 }
-
 
 #start {
     font-size: 65px;
@@ -393,6 +393,7 @@ body {
     width: 400px;
 }
 
+/* cat drawing */
 .cat {
     height: 500px;
     width: 500px;
@@ -424,6 +425,89 @@ body {
     top: 20%;
 }
 
+/* water for cat */
+
+.waterContainer {
+    position: absolute;
+    left: 100px;
+    top: 550px;
+}
+
+.bowl {
+    position: relative;
+    border-bottom: 200px solid #FFA800;
+    border-left: 85px solid transparent;
+    border-right: 85px solid transparent;
+    border-radius: 15px 15px 40px 40px;
+    height: 0;
+    width: 400px;
+}
+
+.inside {
+    position: absolute;
+    top: -45px;
+    height: 100px;
+    width: 100%;
+    background-color: #B17C15;
+    border-radius: 76%;
+}
+
+.water {
+    position: absolute;
+    top: -30px;
+    height: 90px;
+    width: 100%;
+    background-color: #CCFCFF;
+    border-radius: 76%;
+}
+
+.paw {
+    position: relative;
+    top: 120px;
+    left: 150px;
+    border-bottom: 50px solid #5E3C15;
+    border-left: 25px solid transparent;
+    border-right: 25px solid transparent;
+    border-radius: 500px 500px 150px 150px;
+    height: 0;
+    width: 50px;
+}
+
+.pawToe {
+    position: absolute;
+    height: 25px;
+    width: 25px;
+    background-color: #5E3C15;
+    border-radius: 50%;
+}
+
+/* treat  */
+.treatContainer {
+    position: absolute;
+    right: 200px;
+    top: 35%;
+    width: 200px;
+    height: 500px;
+}
+
+.treat {
+    position: relative;
+    height: 500px;
+    width: 100px;
+    background-color: white;
+}
+
+.treat2 {
+    position: absolute;
+    top: 100px;
+    width: 100px;
+    height: 400px;
+    background-image: linear-gradient(#CE2525, #560E0E);
+}
+
+
+
+
 /* Christmas Tree */
 .middle {
     width: 20%;
@@ -432,6 +516,7 @@ body {
     padding: 10px;
     position: relative;
 }
+
 
 .tree {
     margin: auto;
@@ -476,6 +561,25 @@ body {
 .silver {
     background-color: #FFF4F4;
 }
+
+.sky {
+    background-image: linear-gradient(#101938, #4BC6B7);
+    position: absolute;
+    z-index: -1;
+    inset: 0;
+    overflow: hidden;
+
+}
+
+
+.snowFloor {
+    width: 100%;
+    height: 120px;
+    background-image: linear-gradient(white, #9DE8FF);
+    position: absolute;
+}
+
+
 
 .star {
     position: absolute;
