@@ -16,7 +16,7 @@
     font-size: 100px;
 
     &:hover {
-        color: red;
+        color: palevioletred;
         animation-name: expand;
         animation-duration: 3s;
 
@@ -24,31 +24,29 @@
 
 }
 
-h3 {
-    font-family: 'Satoshi', sans-serif;
+.row {
+    display: flex;
+    flex-direction: row;
+}
+
+@font-face {
+    font-family: 'Bespoke';
+    src: url('fonts/Bespoke-hd4CQW56gK.eot');
+    src: url('fonts/Bespoke-hd4CQW56gK.eot?#iefix') format('embedded-opentype'),
+        url('fonts/Bespoke-hd4CQW56gK.woff') format('woff'),
+        url('fonts/Bespoke-hd4CQW56gK.ttf') format('truetype'),
+        url('fonts/Bespoke-hd4CQW56gK.svg#Bespoke-hd4CQW56gK') format('svg');
+}
+
+
+.selfHosted {
+    font-family: 'Bespoke', "bahnshchrift", sans-serif;
     font-size: 100px;
 
     &:hover {
-    color: blue;
-    animation: shake 1s;
+        color: blue;
+        animation: shake 1s;
     }
-}
-
-/* captioning */
-p {
-    font-family: "operetta-12", serif;
-    font-weight: 500;
-    font-size: 20px;
-    font-style: normal;
-}
-
-.a {
-    font-family: 'Skranji', system-ui;
-
-}
-
-.b {
-    font-family: 'Satoshi', sans-serif;
 }
 
 @keyframes bounce {
@@ -71,6 +69,7 @@ p {
     0% {
         transform: scale(1);
     }
+
     100% {
         transform: scale(6);
 
@@ -78,15 +77,49 @@ p {
 }
 
 @keyframes shake {
-    0% { transform: translate(1px, 1px) rotate(0deg); }
-    10% { transform: translate(-1px, -2px) rotate(-1deg); }
-    20% { transform: translate(-3px, 0px) rotate(1deg); }
-    30% { transform: translate(3px, 2px) rotate(0deg); }
-    40% { transform: translate(1px, -1px) rotate(1deg); }
-    50% { transform: translate(-1px, 2px) rotate(-1deg); }
-    60% { transform: translate(-3px, 1px) rotate(0deg); }
-    70% { transform: translate(3px, 1px) rotate(-1deg); }
-    80% { transform: translate(-1px, -1px) rotate(1deg); }
-    90% { transform: translate(1px, 2px) rotate(0deg); }
-    100% { transform: translate(1px, -2px) rotate(-1deg); }
+    0% {
+        transform: translate(1px, 1px) rotate(0deg);
+    }
+
+    10% {
+        transform: translate(-2px, -3px) rotate(-1deg);
+    }
+
+    20% {
+        transform: translate(-3px, 0px) rotate(1deg);
+    }
+
+    30% {
+        transform: translate(3px, 2px) rotate(0deg);
+    }
+
+    40% {
+        transform: translate(10px, -1px) rotate(1deg);
+    }
+
+    50% {
+        transform: translate(-10px, 2px) rotate(-1deg);
+    }
+
+    60% {
+        transform: translate(-3px, 1px) rotate(0deg);
+    }
+
+    70% {
+        transform: translate(3px, 4px) rotate(-1deg);
+    }
+
+    80% {
+        transform: translate(-10px, -4px) rotate(1deg);
+    }
+
+    90% {
+        transform: translate(10px, 6px) rotate(0deg);
+    }
+
+    100% {
+        transform: translate(5px, -10px) rotate(-1deg);
+    }
 }
+
+/* Referenced from https://www.w3schools.com/howto/howto_css_shake_image.asp */
