@@ -1,5 +1,11 @@
+body {
+    width: 50%;
+    margin: auto;
+    text-align: center;
+}
+
 .adobe {
-    font-family: "operetta-12", serif;
+    font-family: "operetta-12", "Elephant", serif;
     font-weight: 800;
     font-size: 100px;
     font-style: normal;
@@ -12,8 +18,9 @@
 }
 
 .google {
-    font-family: 'Skranji', system-ui;
+    font-family: 'Skranji', system-ui, monospace;
     font-size: 100px;
+    text-align: center;
 
     &:hover {
         color: palevioletred;
@@ -24,9 +31,21 @@
 
 }
 
+.selfHosted {
+    font-family: 'Bespoke', "bahnshchrift", sans-serif;
+    font-size: 100px;
+
+    &:hover {
+        color: rgb(226, 96, 21);
+        animation: shake 1s;
+    }
+}
+
+/* Puts span into a row */
 .row {
     display: flex;
     flex-direction: row;
+    justify-content: center;
 }
 
 @font-face {
@@ -39,15 +58,6 @@
 }
 
 
-.selfHosted {
-    font-family: 'Bespoke', "bahnshchrift", sans-serif;
-    font-size: 100px;
-
-    &:hover {
-        color: blue;
-        animation: shake 1s;
-    }
-}
 
 @keyframes bounce {
     0% {
