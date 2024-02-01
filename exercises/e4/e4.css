@@ -154,8 +154,9 @@ footer {
             margin-right: 0px;
 
         }
+
         &:nth-child(2) {
-            margin-right:0px;
+            margin-right: 0px;
             text-align: right;
 
         }
