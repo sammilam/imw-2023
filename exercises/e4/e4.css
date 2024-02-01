@@ -108,7 +108,7 @@ p {
 }
 
 footer {
-    padding: 31px 38px;
+    padding: 31px 38px 26px 38px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -141,14 +141,13 @@ footer {
 
 
 .footer-item3 {
+    font-size: 12px;
+    text-decoration: none;
+
 
     li {
-        font-size: 12px;
-        text-decoration: none;
         padding-bottom: 16px;
         display: block;
-        text-align: right;
-
 
         &:first-child {
             margin-right: 0px;
