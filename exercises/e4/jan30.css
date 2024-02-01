@@ -1,0 +1,163 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+header {
+    background-color: white;
+    border: 1px solid black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 36px;
+    /* top right bottom left */
+}
+
+ul {
+    list-style-type: none;
+    font-weight: 600;
+    /* removes bullets*/
+
+    li {
+        display: inline-block;
+        /*allow items display in one line*/
+
+        &:first-child {
+            margin-right: 44px;
+        }
+
+        &:nth-child(2) {
+            margin-right: 44px;
+        }
+    }
+
+}
+
+body {
+    font-family: sans-serif;
+}
+
+.site-name {
+    font-size: 36px;
+    font-weight: 600;
+
+}
+
+.hero-section {
+    height: 100vh;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+h1 {
+    font-size: 128px;
+    line-height: 106px;
+    margin-bottom: 72px;
+}
+
+h2 {
+    font-size: 32px;
+    font-weight: 500;
+}
+
+h3 {
+    font-size: 22px;
+    font-weight: 600;
+}
+
+h4 {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 9px;
+}
+
+.call-to-action {
+    text-decoration: underline;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.info-section {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.info-section-item {
+    padding: 30px 38px;
+    border-left: 1px solid black;
+}
+
+.info-content {
+    height: 274px;
+}
+
+p {
+    margin-top: 12px;
+}
+
+.secondary {
+    font-size: 10px;
+}
+
+footer {
+    padding: 31px 38px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid black;
+}
+
+.about {
+    width: 245px;
+
+}
+
+.footer-item2 {
+
+    li {
+        font-size: 14px;
+        font-weight: 600;
+
+        &:first-child {
+            margin-right: 0px;
+            padding-right: 28px;
+
+        }
+
+        &:nth-child(2) {
+            padding-right: 28px;
+            margin-right: 0px;
+        }
+    }
+}
+
+
+.footer-item3 {
+
+    li {
+        font-size: 12px;
+        text-decoration: none;
+        padding-bottom: 16px;
+        display: block;
+        text-align: right;
+
+
+        &:first-child {
+            margin-right: 0px;
+
+        }
+        &:nth-child(2) {
+            margin-right:0px;
+            text-align: right;
+
+        }
+    }
+}
