@@ -19,6 +19,27 @@ header {
 
 }
 
+.marquee {
+    position: relative;
+    background-color: #D90368;
+    overflow: hidden;
+}
+
+.marquee-inner {
+    display: flex;
+    width: fit-content;
+    flex: auto;
+    flex-direction: row;
+    animation: moveLeft 20s linear infinite;
+}
+
+.marquee-part {
+    display: flex;
+    align-items: center;
+    flex-shrink: 0;
+    padding: 0 4px;
+
+}
 
 .pageOne {
     display: flex;
@@ -39,7 +60,19 @@ header {
     display: flex;
     align-items: center;
     flex-grow: 1;
+    opacity: 0;
+
+    /* animation-name: fadeIn;
+    animation-delay: 3s;
+    animation-duration: 3s; */
+
+    animation: fadeIn 2s 3s forwards;
 }
+
+.secondHeader {
+    animation: fadeIn 3s cubic-bezier(0.6, -0.28, 0.74, 0.05);
+}
+
 
 /* INFORMATION RIGHT SIDE */
 .april {
@@ -54,6 +87,9 @@ header {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    opacity: 0;
+
+    animation: slideLeft 4s 3s forwards;
 }
 
 .info-content {
@@ -71,7 +107,7 @@ header {
     flex-direction: column;
     animation-name: fadeIn;
     animation-duration: 10s;
-  
+
 }
 
 /* BEGIN OF PAGE TWO */
@@ -91,12 +127,14 @@ header {
     justify-content: center;
     align-items: center;
 
+    animation: fadeIn linear;
+    animation-timeline: scroll();
+
 }
 
 .morningItem {
     width: 30vw;
     height: 25vh;
-
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -119,6 +157,10 @@ header {
     flex-direction: column;
     align-items: flex-start;
     justify-content: flex-start;
+
+
+    animation: scaleUp linear;
+    animation-timeline: scroll();
 }
 
 
@@ -149,15 +191,15 @@ header {
 
 .box {
     margin-top: 130px;
-    border: 2px solid  #C4F31A;
+    border: 2px solid #C4F31A;
     padding: 20px;
     border-radius: 25px;
 
-    &:hover{
-        animation-name: expand;
-        animation-duration: 3s;
+    &:hover {
+        animation: expand 2s ease forwards, glow 3s ease forwards;
     }
 }
+
 
 footer {
     height: 10vh;
@@ -171,10 +213,42 @@ footer {
 h1 {
     font-family: 'VT323', monospace;
     font-size: 200px;
+    font-weight: 400;
     line-height: 160px;
-    text-transform: uppercase;
     color: white;
 
+}
+
+
+/* referenced from https://www.youtube.com/watch?v=mRClOARX26g&ab_channel=CodeWithBubb */
+.container h1 {
+    animation: typing 2.5s, blink 1s infinite;
+    overflow: hidden;
+    margin: 0 auto;
+    white-space: nowrap;
+    border-right: 4px solid white;
+}
+
+@keyframes typing {
+    from {
+        width: 0%;
+    }
+
+    to {
+        width: 100%;
+    }
+}
+
+@keyframes blink {
+
+    from,
+    to {
+        border-color: transparent;
+    }
+
+    50% {
+        border-color: white;
+    }
 }
 
 .web {
@@ -184,7 +258,8 @@ h1 {
     line-height: 400px;
     font-style: normal;
     color: transparent;
-    -webkit-text-stroke: 3px #C4F31A;
+    -webkit-text-stroke: 4px #C4F31A;
+
 }
 
 .web2 {
@@ -193,7 +268,7 @@ h1 {
     font-weight: 400;
     position: absolute;
     left: 22px;
-    top: 290px;
+    top: 260px;
     line-height: 0px;
     color: transparent;
     -webkit-text-stroke: #D90368 4px;
@@ -206,6 +281,7 @@ h2 {
     color: white;
 }
 
+
 h3 {
     font-family: 'Spline Sans Mono', monospace;
     font-size: 20px;
@@ -217,6 +293,7 @@ h3 {
     font-size: 170px;
     display: flex;
     color: white;
+    display: inline-block;
 
 }
 
@@ -243,7 +320,6 @@ p {
     font-family: 'VT323', monospace;
     font-size: 20px;
     color: white;
-
 }
 
 .date {
@@ -254,8 +330,34 @@ p {
     color: transparent;
     -webkit-text-stroke: #D90368 1px;
     text-align: right;
-    opacity: 0.7;
+    opacity: 1;
 }
+
+/* TEXT reveal from https://www.youtube.com/watch?v=EBENCwqVMxs&ab_channel=CluelessExpert */
+
+.outline {
+    color: transparent;
+    -webkit-text-stroke: 3px #2AE3EF;
+    position: relative;
+}
+
+.outline::before {
+    content: "SIGN UP";
+    position: absolute;
+    width: 0%;
+    height: 100%;
+    overflow: hidden;
+    color: #2AE3EF;
+    border-right: 8px solid #2AE3EF;
+    transition: 1s ease-in-out;
+
+}
+
+.outline:hover::before {
+    width: 100%;
+    filter: drop-shadow(0 0 25px #2AE3EF)
+}
+
 
 /* COLOURS */
 
@@ -277,6 +379,15 @@ a:visited {
 
 
 /* ANIMATIONS */
+
+.right {
+    display: inline-block;
+
+    &:hover {
+
+        animation: slideRight 4s ease forwards;
+    }
+}
 
 
 @keyframes expand {
@@ -305,7 +416,8 @@ a:visited {
 }
 
 .bouncing-element {
-    animation: bounce 2s infinite; 
+
+    animation: bounce 2s infinite;
 }
 
 @keyframes fadeIn {
@@ -317,3 +429,52 @@ a:visited {
         opacity: 1;
     }
 }
+
+@keyframes slideRight {
+    to {
+        transform: translateX(300%)
+    }
+}
+
+@keyframes slideLeft {
+
+    from {
+        opacity: 0;
+        transform: translate(-10%)
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0%)
+    }
+}
+
+@keyframes moveLeft {
+    from {
+        transform: translateX(100%);
+    }
+
+    to {
+        transform: translateX(-100%);
+    }
+}
+
+@keyframes glow {
+    50% {
+        box-shadow: 0px 0px 50px yellow
+    }
+}
+
+@keyframes scaleUp {
+    0% {
+        transform: scale(0);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+
+/* helpful flex resources 
+https://css-tricks.com/snippets/css/a-guide-to-flexbox/#aa-flexbox-tricks */
