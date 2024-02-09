@@ -1,4 +1,319 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+
+body {
+    background-color: #01112D;
+}
+
+/* size layout */
+
+header {
+    height: 10vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+.pageOne {
+    display: flex;
+    flex-direction: row;
+}
+
+.title {
+    display: flex;
+    width: 70vw;
+    height: 90vh;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+}
+
+/* OVERLAPPING DECOR */
+.decor {
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+}
+
+/* INFORMATION RIGHT SIDE */
+.april {
+    margin-top: 150px;
+    margin: 150px 0px 0px 10px;
+}
+
+
+.info {
+    width: 30vw;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.info-content {
+    margin: 25px 20px 55px 22px;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+
+.learn {
+    margin: 120px 0px 130px 0px;
+    display: flex;
+    flex-direction: column;
+    animation-name: fadeIn;
+    animation-duration: 10s;
+  
+}
+
+/* BEGIN OF PAGE TWO */
+
+.pageTwo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.morning {
+    height: 25vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.morningItem {
+    width: 30vw;
+    height: 25vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+.events {
+    width: 90vw;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.eventsInfo {
+    width: 30vw;
+    /* height: 25vh; */
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+
+.col {
+    display: grid;
+    column-count: 3;
+}
+
+.signUp {
+    width: 90vw;
+    height: 40vh;
+    display: flex;
+    flex-direction: row;
+}
+
+.sign {
+    width: 90vh;
+
+}
+
+.register {
+    width: 30vw;
+    height: 40vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box {
+    margin-top: 130px;
+    border: 2px solid  #C4F31A;
+    padding: 20px;
+    border-radius: 25px;
+
+    &:hover{
+        animation-name: expand;
+        animation-duration: 3s;
+    }
+}
+
+footer {
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* TEXT */
+
 h1 {
-    font-family: monospace;
-    font-size: 60px;
+    font-family: 'VT323', monospace;
+    font-size: 200px;
+    line-height: 160px;
+    text-transform: uppercase;
+    color: white;
+
+}
+
+.web {
+    font-family: 'Viga', sans-serif;
+    font-size: 400px;
+    font-weight: 400;
+    line-height: 400px;
+    font-style: normal;
+    color: transparent;
+    -webkit-text-stroke: 3px #C4F31A;
+}
+
+.web2 {
+    font-family: 'Viga', sans-serif;
+    font-size: 400px;
+    font-weight: 400;
+    position: absolute;
+    left: 22px;
+    top: 290px;
+    line-height: 0px;
+    color: transparent;
+    -webkit-text-stroke: #D90368 4px;
+}
+
+
+h2 {
+    font-family: 'VT323', monospace;
+    font-size: 50px;
+    color: white;
+}
+
+h3 {
+    font-family: 'Spline Sans Mono', monospace;
+    font-size: 20px;
+    color: white;
+
+}
+
+.heading {
+    font-size: 170px;
+    display: flex;
+    color: white;
+
+}
+
+.sub {
+    font-size: 20px;
+    line-height: 26px;
+}
+
+p {
+    font-family: 'Spline Sans Mono', monospace;
+    font-size: 14px;
+    line-height: 18px;
+    color: white;
+}
+
+.down {
+    font-size: 100px;
+    line-height: 30px;
+    text-align: center;
+}
+
+/* top and bottom line of organizers */
+.committee {
+    font-family: 'VT323', monospace;
+    font-size: 20px;
+    color: white;
+
+}
+
+.date {
+    font-family: 'Viga', sans-serif;
+    font-size: 120px;
+    font-weight: 400;
+    line-height: 100px;
+    color: transparent;
+    -webkit-text-stroke: #D90368 1px;
+    text-align: right;
+    opacity: 0.7;
+}
+
+/* COLOURS */
+
+.pink {
+    color: #D90368;
+}
+
+.green {
+    color: #C4F31A;
+}
+
+.blue {
+    color: #2AE3EF;
+}
+
+a:visited {
+    color: #D90368;
+}
+
+
+/* ANIMATIONS */
+
+
+@keyframes expand {
+    0% {
+        transform: scale(1);
+    }
+
+    100% {
+        transform: scale(2);
+        background-color: white;
+    }
+}
+
+@keyframes bounce {
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-50px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+.bouncing-element {
+    animation: bounce 2s infinite; 
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
 }
