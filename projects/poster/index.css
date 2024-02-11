@@ -11,6 +11,8 @@ body {
     overflow: scroll;
 }
 
+
+/* for cursor trail */
 .dot {
     width: 10px;
     height: 10px;
@@ -277,7 +279,6 @@ h1 {
     font-style: normal;
     color: transparent;
     -webkit-text-stroke: 4px #C4F31A;
-
 }
 
 .web2 {
@@ -295,6 +296,7 @@ h1 {
 
 h2 {
     font-family: 'VT323', monospace;
+    font-weight: 400;
     font-size: 50px;
     color: white;
 }
@@ -302,6 +304,7 @@ h2 {
 
 h3 {
     font-family: 'Spline Sans Mono', monospace;
+    font-weight: 400;
     font-size: 20px;
     color: white;
 

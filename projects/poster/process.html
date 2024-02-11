@@ -1,117 +1,142 @@
 <!DOCTYPE html>
 
 <html lang="en">
-  <head>
-  	<meta name="viewport" content="width=device-width, initial-zoom:1.0">
-  	<meta charset="utf-8">
-    <title>Process</title>
-    <style>
-        /* Move all CSS to a stylesheet */
-        * { /* Remove default browser spacing */
-            margin: 0;
-            padding: 0;
-        }
-        body {
-            margin: 100px; /* Add spacing around the entire page */ 
-            font-size: 12px; /* Setting baseline font size */ 
-        }
 
-        /* Start of text sizes */
-        h1 {
-            font-size: 4em;
-        }
-        h2 {
-            font-size: 3em;
-        }
-        p {
-            font-size: 2em;
-            line-height: 1.5em;
-        }
-        figcaption {
-            font-size: 1.25em;
-        }
-        /* End of text sizes */
+<head>
+    <meta name="viewport" content="width=device-width, initial-zoom:1.0">
+    <meta charset="utf-8">
+    <title>Poster Process</title>
 
-        /* Start of spacing and layout */
-        h2, p, figure, figcaption {
-            margin-bottom: 40px;
-        }
-        img {
-            margin-bottom: 10px;
-        }
-        .process-template {
-            width: 40%; /* Set the width of the template to 60% of the viewport. */
-            margin: auto; /* Center align the template by adding auto margins to the left and right */
-        }
-        .title {
-            margin-bottom: 100px; /* Add spacing to the bottom of the title div */
-        }
+    <!-- GOOGLE HEADINGS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
+    <!-- body text from Google -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Spline+Sans+Mono:ital@1&family=VT323&display=swap"
+        rel="stylesheet">
+    <link href="process.css" rel="stylesheet">
+</head>
 
-        .section {
-            margin-bottom: 100px;
-        }
-        /* End of spacing and layout */
-
-        /* Adding media queries for page to adapts to tablet and mobile devices */
-        @media (max-width: 991px) {
-            .process-template {
-                width: 60%;
-            }
-        }
-
-        @media (max-width:767px) {
-            body {
-                margin: 40px;
-                font-size: 10px;
-            }
-            .process-template {
-                width: 100%;
-            }
-        }
-
-    </style>
-  </head>
-  <body>
+<body>
     <div class="process-template">
         <!-- Start of title -->
         <div class="title">
-            <h1>Page Title</h1>
+            <h1>THEORIZING THE WEB 2018 | Poster Process</h1>
         </div>
         <!-- End of title -->
         <!-- Start of content -->
         <div class="content">
             <!-- Start of a section -->
             <div class="section">
-                <h2>Section Title</h2>
+                <h2>Initiation</h2>
                 <p>
-                    This is a paragraph section where you can place your writing such as how you framed the project, what inspired you, what kind of research did you do, how did your idea evolve, what were key points of your refinement process, etc. Each paragraph will need to go into a separate paragraph tag.
+                    When deciding which content packages I found interesting, I searched for words that may evoke a
+                    feeling to determine the overall experience. The environment and the web stood out to me as I could
+                    play with an earthly tone or a technological approach. In the end, I chose "Theorizing the Web 2018"
+                    as I wanted to represent the interrelationship of the web and people through interactions within the
+                    poster. First, I created a mood board to find compelling layouts, hierarchy, and approaches to
+                    deliver the content's voice through design.
                 </p>
                 <!-- Start of a section -->
                 <!-- Start of image with caption -->
                 <figure>
-                  <img src="https://via.placeholder.com/600x300/000000/FFFFFF/?text=Replace+this+placeholder+image" alt="This text should describe the image" width="100%">
-                  <figcaption>Caption text for image if needed</figcaption>
+                    <img src="moodboard.PNG" alt="Multiple images of posters in columns." width="100%">
+                    <figcaption>Mood board gathered from Pinterest, Google, etc. </figcaption>
                 </figure>
                 <!-- End of image with caption -->
             </div>
             <!-- End of a section -->
             <!-- Start of a new section -->
             <div class="section">
-                <h2>Another Section Title</h2>
+                <h2>Sketching</h2>
                 <p>
-                    This is a paragraph section where you can place your writing such as how you framed the project, what inspired you, what kind of research did you do, how did your idea evolve, what were key points of your refinement process, etc. Each paragraph will need to go into a separate paragraph tag.
+                    I looked further into the organization's website and how they designed posters for their event. The
+                    canvas filled with imagery and emphasized words "Theorizing" and "2018" gave me a sense of direction
+                    in what to prioritize in the poster. I drew sketches of possible layouts that play with layering or
+                    scale. For the term 'theorizing,' I imagine a scenario of uncovering the unknown. I wanted to play
+                    with fluctuating colours when hovering over the letters to allow interaction and discovery.
+                    Moreover, I chose a pixel monospace to display technology and sans-serif to have a human feel.
                 </p>
                 <!-- Start of a section -->
                 <!-- Start of image with caption -->
                 <figure>
-                  <img src="https://via.placeholder.com/600x300/000000/FFFFFF/?text=Replace+this+placeholder+image" alt="This text should describe the image" width="100%">
-                  <figcaption>Caption text for image if needed</figcaption>
+                    <img src="sketches.png" alt="Thumbnail sketches of poster layout" width="100%">
+                    <figcaption>Thumbnail sketches of poster layout.</figcaption>
+                    <img src="TtW18.jpg" alt="Collage of images with text: Theorizing the Web 2018. Advertisement." width="100%">
+                    <figcaption>Event advertisement.</figcaption>
                 </figure>
                 <!-- End of image with caption -->
             </div>
             <!-- End of a new section -->
+            <!-- Start of a new section -->
+
+            <div class="section">
+                <h2>Figma Implementation</h2>
+                <p>
+                    When designing on Figma, I wanted to illustrate two pages. One page is the landing, while the second
+                    presents all the information and calls to action. Since the poster is solely typographical, I
+                    decided to use asterisks and slashes to add texture and detail, filling the space with a computing
+                    aesthetic.
+                </p>
+                <!-- Start of a section -->
+                <!-- Start of image with caption -->
+                <figure>
+                    <img src="web1.PNG" alt="Figma board of black and white poster design" width="100%">
+                    <figcaption>Black and white design on Figma.</figcaption>
+                </figure>
+                <!-- End of image with caption -->
+            </div>
+            <!-- End of a new section -->
+            <!-- Start of a new section -->
+
+            <div class="section">
+                <h2>Exploration</h2>
+                <p>
+                    From black & white to colour, I found this transition intimidating. I felt the white space around
+                    the text made the overall poster look empty and flat. As I shifted towards a dark-mode approach, I
+                    believe it best depicts technology as I can take advantage of glowing effects (to represent computer
+                    screens, etc). On the last board, I made gridlines to help myself code the flexbox layout and
+                    understand where to place elements.
+                </p>
+                <!-- Start of a section -->
+                <!-- Start of image with caption -->
+                <figure>
+                    <img src="web2.PNG" alt="Figma board of all designs" width="100%">
+                    <figcaption>Figma board of all designs.</figcaption>
+                </figure>
+                <!-- End of image with caption -->
+            </div>
+            <!-- End of a new section -->
+            <!-- Start of a new section -->
+            <div class="section">
+                <h2>Code</h2>
+                <p>
+                    I experimented a lot with interactions using over and animation delay to introduce information and
+                    allow a playful aspect to the poster. I felt it brought a 2D object to life using glow, a cursor
+                    trail, scale, and transitions. When scrolling down to the second page, I wanted to try parallax
+                    scrolling using CSS. It was cool to see the scale/fade in change on the scroll, as it can create an
+                    engaging experience. The images below show interactions.
+                </p>
+                <!-- Start of a section -->
+                <!-- Start of image with caption -->
+                <figure>
+                    <img src="cursor.PNG" alt="cursor trail" width="100%">
+                    <img src="signUp.PNG" alt="sign up glowing" width="100%">
+                    <img src="register.PNG" alt="register glowing button" width="100%">
+                    <img src="theory.PNG" alt="colour reveal on hover." width="100%">
+                    <figcaption>Screenshots of interactions.</figcaption>
+                </figure>
+                <!-- End of image with caption -->
+            </div>
+            <!-- End of a new section -->
+            <!-- Start of a new section -->
+           
+            <h2> <a href="index.html"> View Final</a></h2>
         </div>
         <!-- End of content -->
     </div>
-  </body>
+</body>
+
 </html>

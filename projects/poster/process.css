@@ -1,0 +1,96 @@
+/* Move all CSS to a stylesheet */
+* {
+    /* Remove default browser spacing */
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 100px;
+    /* Add spacing around the entire page */
+    font-size: 12px;
+    /* Setting baseline font size */
+    background-color: #01112D;
+}
+
+/* Start of text sizes */
+h1 {
+    font-family: 'VT323', monospace;
+    font-weight: 400;
+    font-size: 4em;
+    color: #D90368;
+}
+
+h2 {
+    font-family: 'VT323', monospace;
+    font-weight: 400;
+    font-size: 3em;
+    color: white;
+
+}
+
+p {
+    font-family: 'Spline Sans Mono', monospace;
+    font-weight: 400;
+    font-size: 1.5em;
+    line-height: 1.5em;
+    color: white;
+
+}
+
+figcaption {
+    font-family: 'Spline Sans Mono', monospace;
+    font-weight: 400;
+    font-size: 1.25em;
+    color: white;
+
+}
+
+/* End of text sizes */
+
+/* Start of spacing and layout */
+h2,
+p,
+figure,
+figcaption {
+    margin-bottom: 40px;
+}
+
+img {
+    margin-bottom: 10px;
+}
+
+.process-template {
+    width: 50%;
+    margin: auto;
+    /* Center align the template by adding auto margins to the left and right */
+}
+
+.title {
+    margin-bottom: 100px;
+    /* Add spacing to the bottom of the title div */
+}
+
+.section {
+    margin-bottom: 100px;
+}
+
+/* End of spacing and layout */
+
+/* Adding media queries for page to adapts to tablet and mobile devices */
+@media (max-width: 991px) {
+    .process-template {
+        width: 60%;
+    }
+}
+
+@media (max-width:767px) {
+    body {
+        margin: 40px;
+        font-size: 10px;
+    }
+
+    .process-template {
+        width: 100%;
+    }
+}
