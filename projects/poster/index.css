@@ -3,15 +3,12 @@
     margin: 0;
 }
 
-
-
-
 body {
     width: 100%;
     height: 100vh;
     background-color: #01112D;
     margin: 0;
-    overflow:scroll;
+    overflow: scroll;
 }
 
 .dot {
@@ -24,10 +21,11 @@ body {
     transform: translate(-50%, -50%);
 }
 
+
 /* size layout */
 
 header {
-    height: 10vh;
+    height: 8vh;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -47,7 +45,7 @@ header {
     width: fit-content;
     flex: auto;
     flex-direction: row;
-    animation: moveLeft 20s linear infinite;
+    animation: moveLeft 30s linear infinite;
 }
 
 .marquee-part {
@@ -77,7 +75,7 @@ header {
     display: flex;
     align-items: center;
     flex-grow: 1;
- 
+
     /* animation fade in for intro */
     opacity: 0;
     animation: fadeIn 2s 3s forwards;
@@ -165,22 +163,15 @@ header {
 
 .eventsInfo {
     width: 30vw;
-    /* height: 25vh; */
     padding: 25px;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     justify-content: flex-start;
 
-
+    /* scroll-based from https://www.youtube.com/watch?v=UmzFk68Bwdk&t=15s&ab_channel=KevinPowell */
     animation: scaleUp linear;
     animation-timeline: scroll();
-}
-
-
-.col {
-    display: grid;
-    column-count: 3;
 }
 
 .signUp {
@@ -188,11 +179,11 @@ header {
     height: 40vh;
     display: flex;
     flex-direction: row;
+    justify-content: space-around;
 }
 
 .sign {
     width: 90vh;
-
 }
 
 .register {
@@ -295,7 +286,7 @@ h1 {
     font-weight: 400;
     position: absolute;
     left: 22px;
-    top: 260px;
+    top: 34%;
     line-height: 0px;
     color: transparent;
     -webkit-text-stroke: #D90368 4px;
