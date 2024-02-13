@@ -59,6 +59,7 @@ header {
 }
 
 .pageOne {
+    margin: 0px 8vw 0 8vw;
     display: flex;
     flex-direction: row;
 }
@@ -286,8 +287,8 @@ h1 {
     font-size: 400px;
     font-weight: 400;
     position: absolute;
-    left: 22px;
-    top: 34%;
+    left: 0.35em;
+    top: 0.75em;
     line-height: 0px;
     color: transparent;
     -webkit-text-stroke: #D90368 4px;
