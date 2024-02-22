@@ -66,7 +66,7 @@ let fontSize = 12;
 let timeIncrease = setInterval(increaseFontSize, 1000);
 
 
-function increaseFontSize(){
+function increaseFontSize() {
     fontSize++;
     increaseText.style.fontSize = fontSize + "px";
 }
@@ -92,4 +92,4 @@ https://www.w3schools.com/js/tryit.asp?filename=tryjs_string_length
 */
 
 // CONSOLE
-console.log ("AHAHHAHAHA");
+console.log("AHAHHAHAHA");
