@@ -13,13 +13,13 @@ for (let i = 0; i < 500; i++) {
 
 
 $('div').each(function () {
-    $(this).on('mouseenter', function(){
+    $(this).on('mouseenter', function () {
         $(this).addClass('no-width')
     })
 })
 
-$('body').on("keypress", function(){
-console.log ("key pressed");
-$('div').removeClass('no-width')
+$('body').on("keypress", function () {
+    console.log("key pressed");
+    $('div').removeClass('no-width')
 })
 
