@@ -22,18 +22,20 @@ $(document).ready(function () {
 // https://api.jquery.com/css/
 
 // Manipulation
-$(document).ready(function () {
-    $(".red").on("click", function () {
-        // Check if the background color is red
-        if ($(".eyes").css("background-color") === "rgb(255, 0, 0)") {
-            // If it's red, change back to the original color
-            $(".eyes").css("background-color", "");
-        } else {
-            // Change background to red
-            $(".eyes").css("background-color", "red");
-        }
+function redEye() {
+    $(document).ready(function () {
+        $(".red").on("click", function () {
+            // Check if the background color is red
+            if ($(".eyes").css("background-color") === "rgb(255, 0, 0)") {
+                // If it's red, change back to the original color
+                $(".eyes").css("background-color", "");
+            } else {
+                // Change background to red
+                $(".eyes").css("background-color", "red");
+            }
+        });
     });
-});
+}
 // https://api.jquery.com/css/
 
 function jumpBread() {
