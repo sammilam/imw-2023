@@ -1,0 +1,22 @@
+{
+    "plants" : [
+        {
+            "name": "Rubber Plant",
+            "photo": "rubberplant.jpg",
+            "description": "Easy to take care of"
+
+        },
+        {
+            "name": "Monstera",
+            "photo": "monsterra.jpg",
+            "description": "Easy to take care of"
+        },
+        {
+            "name": "ZZplant",
+            "photo": "zzplant.jpg",
+            "description": "Easy to take care of"
+        }
+    ]
+}
+
+
