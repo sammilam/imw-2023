@@ -1,0 +1,23 @@
+#image-container {
+    border: 2px solid black;
+}
+
+h1 {
+    font-family: "temeraire", serif;
+    font-weight: 700;
+    font-size: 45px;
+    font-style: normal;
+    text-align: center;
+}
+
+
+section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+body {
+    background-color: rgb(202, 177, 156);
+}
