@@ -1,0 +1,226 @@
+* {
+    padding: 0;
+    margin: 0px;
+}
+
+body {
+    display: flex;
+    flex-direction: row;
+    background-color: #EE48DD;
+}
+
+
+.left {
+    display: flex;
+    width: 25vw;
+    height: 100vh;
+    /* border: solid 5px black; */
+
+}
+
+.middle {
+    width: 50%;
+    height: 50%;
+    position: absolute;
+    top: 20%;
+    left: 26%;
+    /* border: solid 5px black; */
+}
+
+h1 {
+    position: absolute;
+    font-family: "doublebass", sans-serif;
+    font-size: 80px;
+    font-weight: 400;
+    font-style: normal;
+    color: #DBFF00;
+
+    animation: bounce 1s infinite alternate;
+}
+
+h2 {
+    font-family: "lores-12", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    color: white;
+}
+
+
+
+/* GROUND */
+.ground {
+    position: absolute;
+    bottom: 0;
+    width: 100vw;
+    height: 30%;
+    background-color: #221914;
+}
+
+/* boombox */
+.base {
+    height: 485px;
+    width: 100%;
+    background-color: #A4B1F6;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+}
+
+
+.speakerSection {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+/* slider */
+.sliderContainer {
+    width: 220px;
+    height: 30px;
+}
+
+.baseSlide {
+    width: 100%;
+    height: 100%;
+    border-radius: 25px;
+    background-color: #191A11;
+}
+
+.slider {
+    width: 15px;
+    height: 80px;
+    background-color: #FFFCF3;
+    position: relative;
+    top: -55px;
+    left: 20px;
+}
+
+/* speakers */
+.circle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 300px;
+    width: 300px;
+    background-color: #191A11;
+    border-radius: 50%;
+    z-index: 10;
+}
+
+.yellowCircle {
+    height: 50%;
+    width: 50%;
+    background-color: #e1f830;
+    border-radius: 50%;
+}
+
+/* references: https://www.youtube.com/watch?v=MCXqC7pzulk&t=65s&ab_channel=csPoint */
+
+.waves {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    position: absolute;
+    z-index: -10;
+}
+
+
+.waves:before {
+    position: absolute;
+    content: '';
+    border: 5px solid #f1c40f;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    border-radius: 50%;
+    animation: animate 3s linear infinite;
+}
+
+
+
+@keyframes animate {
+    100% {
+        transform: scale(8);
+        opacity: 0
+    }
+}
+
+
+/* song bar */
+
+.name {
+    width: 577px;
+    height: 50px;
+    background-color: #191A11;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.disc {
+    width: 20%;
+    height: 8%;
+    background-color: #FBFF3B;
+}
+
+
+/* top of boombox */
+.bar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+
+}
+
+.handle {
+    width: 100%;
+    height: 51px;
+    background-color: #080D93;
+
+}
+
+.edges {
+    height: 100px;
+    width: 100px;
+    background-color: #A4B1F6;
+}
+
+
+
+/* animations */
+
+@keyframes bounce {
+    0% {
+        transform: translateY(0);
+        /* Start position */
+    }
+
+    100% {
+        transform: translateY(20px);
+        /* End position */
+    }
+}
+
+/* Add this CSS to define the ripple animation */
+@keyframes ripple {
+    0% {
+        transform: scale(0);
+        opacity: 1;
+    }
+
+    100% {
+        transform: scale(10);
+        opacity: 0;
+    }
+}
+
+.waves.ripple {
+    animation: ripple 1s ease-out forwards;
+    /* Adjust animation duration */
+}
