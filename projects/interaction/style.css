@@ -114,6 +114,8 @@ h2 {
     width: 50%;
     background-color: #e1f830;
     border-radius: 50%;
+    cursor: pointer;
+
 }
 
 /* references: https://www.youtube.com/watch?v=MCXqC7pzulk&t=65s&ab_channel=csPoint */
@@ -165,6 +167,7 @@ h2 {
     width: 20%;
     height: 8%;
     background-color: #FBFF3B;
+    cursor: pointer;
 }
 
 

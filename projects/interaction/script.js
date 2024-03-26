@@ -1,20 +1,5 @@
 console.log("hello");
 
-// Detect when waves touch the edges
-// window.addEventListener('animationiteration', function (event) {
-//     if (event.animationName === 'animate') {
-//         var waves = document.querySelector('.waves');
-//         var rect = waves.getBoundingClientRect();
-//         if (rect.top <= 0 || rect.bottom >= window.innerHeight || rect.left <= 0 || rect.right >= window.innerWidth) {
-//             document.body.style.overflow = 'hidden'; // Disable scrolling
-//             waves.style.display = 'none';
-//             setTimeout(function () {
-//                 document.body.style.overflow = ''; // Re-enable scrolling after waves disappear
-//             }, 2000); // Adjust the duration to match the animation duration
-//         }
-//     }
-// });
-
 $(document).ready(function () {
     $(".yellowCircle1").on("click", function () {
         var $newWave = $("<div>").addClass("waves");
@@ -41,19 +26,39 @@ $(document).ready(function () {
     });
 });
 
+document.addEventListener('DOMContentLoaded', function () {
+    var disc = document.getElementById('disc');
+    var audio = document.getElementById('audio');
+    var currentSong = 0;
+    var songs = ['Fret.mp3', 'Girl on Top.mp3', 'Woodshedder.mp3'];
 
-// function ripple() {
-
-// }
-
-
-// $(document).ready(function () {
-//     $('.yellowCircle').on('click', function () {
-//         $('.waves').addClass('ripple');
-//         setTimeout(function () {
-//             $('.waves').removeClass('ripple');
-//         }, 2000); // Adjust animation duration
-//     });
-// });
+    disc.addEventListener('click', function () {
+        currentSong = (currentSong + 1) % songs.length; // Increment current song index
+        audio.src = songs[currentSong]; // Set the source of the audio element to the next song
+        audio.play(); // Play the new song
+    });
+});
 
 
+document.addEventListener('DOMContentLoaded', function () {
+    var disc = document.getElementById('disc');
+    var audio = document.getElementById('audio');
+    var songNameElement = document.getElementById('songName');
+    var currentSong = 0;
+    var songs = ['Fret.mp3', 'Girl on Top.mp3', 'Woodshedder.mp3'];
+    var songNames = ['Dont Fret by Quincas Moreira', 'Girl on Top by Amy Lynn & The Honey Men', 'Woodshedder Quincas Moreira'];
+
+    disc.addEventListener('click', function () {
+        currentSong = (currentSong + 1) % songs.length;
+        audio.src = songs[currentSong];
+        audio.play();
+        displaySongName(); // Call the function to update the displayed song name\
+    });
+
+    function displaySongName() {
+        songNameElement.textContent = songNames[currentSong]; // Update the text content of the song name element
+    }
+});
+
+
+// music from: https://studio.youtube.com/channel/UC6IN2OLxk1RlNRH_CDt0hMQ/music
