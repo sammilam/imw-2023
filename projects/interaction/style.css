@@ -9,7 +9,7 @@ body {
     background-color: #EE48DD;
 }
 
-
+/* LAYOUT */
 .left {
     display: flex;
     width: 25vw;
@@ -27,6 +27,7 @@ body {
     /* border: solid 5px black; */
 }
 
+/* TEXT */
 h1 {
     position: absolute;
     font-family: "doublebass", sans-serif;
@@ -201,29 +202,9 @@ h2 {
 @keyframes bounce {
     0% {
         transform: translateY(0);
-        /* Start position */
     }
 
     100% {
         transform: translateY(20px);
-        /* End position */
     }
-}
-
-/* Add this CSS to define the ripple animation */
-@keyframes ripple {
-    0% {
-        transform: scale(0);
-        opacity: 1;
-    }
-
-    100% {
-        transform: scale(10);
-        opacity: 0;
-    }
-}
-
-.waves.ripple {
-    animation: ripple 1s ease-out forwards;
-    /* Adjust animation duration */
 }
