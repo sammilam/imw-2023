@@ -37,7 +37,7 @@ document.addEventListener('DOMContentLoaded', function () {
     var songNameElement = document.getElementById('songName');
     var currentSong = 0;
     // song in an array and aligns along with the names
-    var songs = ['Fret.mp3', 'Girl on Top.mp3', 'Woodshedder.mp3'];
+    var songs = ['Fret.mp3', 'Girl.mp3', 'Woodshedder.mp3'];
     var songNames = ['Dont Fret by Quincas Moreira', 'Girl on Top by Amy Lynn & The Honey Men', 'Woodshedder Quincas Moreira'];
 
     disc.addEventListener('click', function () {
